@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Library Hours</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css' />
+</head>
+<body>
+    <div id='calendar'></div>
+</body>
+<script>
+var events = [];
+
+function mil2civTime(milTime) {
+    let timeNoZero = milTime.replace(/^0/, ''); // strip leading zero
+    let bits = timeNoZero.split(":");
+    let hours = bits[0];
+    let mins = bits[1];
+    let civTime = "";
+    if (hours > 12) {
+        hours -= 12;
+        civTime = hours + ":" + mins + "\xa0pm";
+    } else {
+        civTime = hours + ":" + mins + "\xa0am";
+    }
+    return civTime;
+}
+
+// returns a list of days within a time period (inclusive)
+function getDays(start, end, dow) {
+    dow = dow || '';
+    start = start.replace(/Z/,"");
+    end = end.replace(/Z/,"");
+    let days = [];
+    let start_m = moment(start, "YYYY-MM-DD");
+    let end_m = moment(end, "YYYY MM DD");
+    for (let m = moment(start_m); m.diff(end_m, 'days') <= 0; m.add(1, 'days')) {
+        if (m.format('dddd') === dow && dow !== '') {
+            days.push(m.format('YYYY-MM-DD'));
+        }
+        if (dow === '') {
+            days.push(m.format('YYYY-MM-DD'));
+        }
+    }
+    return days;
+}
+
+function reviseHoursForExceptionalDay(regFrom, regTo, excFrom, excTo, theDate, status) {
+    if (status === "Closed") {
+        // deal with the three types of "closed" exceptions
+        // we're closed all day
+        if (excFrom === '00:00' && excTo === '23:59') {
+            // update the event in "events" array
+            for (let k=0; k<events.length; k++) {
+                if (events[k].start === theDate) {
+                    events[k].title = "Closed";
+                    // events[k].rendering = "background";
+                }
+            }
+
+        // close early
+        } else if (excFrom !== '00:00' && excTo === '23:59') {
+            for (let m=0; m<events.length; m++) {
+                if (events[m].start === theDate) {
+                    events[m].title = regFrom + " - " + excFrom;
+                }
+            }
+
+        // open late
+        } else if (excFrom === '00:00' && excTo !== '23:59') {
+            for (let n=0; n<events.length; n++) {
+                if (events[n].start === theDate) {
+                    events[n].title = excTo + " - " + regTo;
+                }
+            }
+        }
+
+    } else {
+        // deal with "open" exceptions (exam hours)
+        for (let p=0; p<events.length; p++) {
+            if (events[p].start === theDate) {
+                events[p].title = regFrom + " - " + excTo;
+            }
+        }
+    }
+}
+
+function parseCalendar(jsonDoc) {
+
+    $.each(jsonDoc.open_hour, function(i, v) {
+        if (v.type.value === "WEEK") {
+            // establish the regular hours
+            var dow = v.day_of_week.desc; // e.g., "Tuesday"
+
+            // find all the Tuesdays (or whatever)
+            var datesForDow = getDays(v.from_date, v.to_date, dow);
+
+            // make an event for each Tuesday (or whatever)
+            for (let i=0; i<datesForDow.length; i++) {
+                var start = datesForDow[i];
+                var time = v.from_hour + " - " + v.to_hour;
+                var event = {"start": start, "title": time};
+                events.push(event);
+            }
+
+        } else if (v.type.value === "EXCEPTION") {
+            
+            var theFromDate = v.from_date.replace(/Z/,"");
+            var theToDate = v.to_date.replace(/Z/,"");
+
+            if (theFromDate === theToDate) {  // one-day exception
+                
+                for (let i=0; i<events.length; i++) {
+                    if (theFromDate === events[i].start) {
+                        // what are the normal hours for that day?
+                        var theRegHours = events[i].title.split(/ - /);
+                        var regFrom = theRegHours[0];
+                        var regTo = theRegHours[1];
+
+                        // exception times and status
+                        var excFrom = v.from_hour;
+                        var excTo = v.to_hour;
+                        var status = v.status.desc;
+
+                        reviseHoursForExceptionalDay(regFrom, regTo, excFrom, excTo, theFromDate, status);
+                    }
+                }
+
+            } else {  // multi-day exception
+
+                // console.log(theFromDate + " " + theToDate);
+                var multiExceptionDays = getDays(theFromDate, theToDate);
+                // console.log(multiExceptionDays);
+                for (let i=0; i<multiExceptionDays.length; i++) {
+                    // edit the existing element to account for the exception
+                    
+                    for (let j=0; j<events.length; j++) {
+                        if (multiExceptionDays[i] === events[j].start) {
+
+                             // what are the normal hours for that day?
+                            var theRegHoursM = events[j].title.split(/ - /);
+                            //console.log(theRegHoursM);
+                            var regFromM = theRegHoursM[0];
+                            var regToM = theRegHoursM[1];
+
+
+                            // exception times and status
+                            var excFromM = v.from_hour;
+                            //console.log(excFromM);
+                            var excToM = v.to_hour;
+                            var statusM = v.status.desc;
+                            // console.log(multiExceptionDays[q] + " " + excFromM + " " + excToM);
+
+                            reviseHoursForExceptionalDay(regFromM, regToM, excFromM, excToM, multiExceptionDays[i], statusM);
+                        }
+                    }
+                }
+            }
+
+        } else {
+            // console.log("HUH? " + v.type.value);
+        }
+    });
+
+    // run through events one last time, converting to civilian time or English message
+    for (let i=0; i<events.length; i++) { 
+        if (events[i].title !== "Closed") {
+            let pieces = events[i].title.split(" - ");
+            let fromMil = pieces[0];
+            let toMil = pieces[1];
+            let fromCiv = mil2civTime(fromMil);
+            let toCiv = mil2civTime(toMil);
+            if (fromMil === "00:00" && toMil === "23:59") {
+                events[i].title = "Open 24 hours";
+            } else if (fromMil !== "00:00" && toMil === "23:59") {
+                events[i].title = "Open at " + fromCiv;
+            } else if (fromMil === "00:00" && toMil !== "23:59") {
+                events[i].title = "Open until " + toCiv;
+            } else {
+                events[i].title = fromCiv + " \u2013 " + toCiv;
+            }
+        }
+    }
+    return events;
+}
+
+$(document).ready(function() {
+    $.getJSON("hours.json",
+        function(json) {
+            var events = parseCalendar(json);
+            var view = "";
+            if (window.innerWidth < 700) {
+                view = 'listMonth';
+            } else {
+                view = 'month';
+            }
+            $('#calendar').fullCalendar({
+                header: {
+                    left: '',
+                    center: 'prev, title, next',
+                    right: ''
+                },
+                titleFormat: 'MMMM YYYY',
+                fixedWeekCount: false,
+                eventLimit: true,
+                showNonCurrentDates: false,
+                defaultView: view,
+                events: events
+            });
+            var d = moment().format('MMMM D, YYYY');
+            $('#calendar').fullCalendar('gotoDate', d);
+        });
+});
+</script>
+</html>

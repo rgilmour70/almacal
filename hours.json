@@ -1,0 +1,1657 @@
+{
+  "open_hour": [
+    {
+      "type": {
+        "value": "WEEK",
+        "desc": "Standard opening hours"
+      },
+      "inherited": false,
+      "desc": "Tuesday",
+      "from_date": "2017-06-19Z",
+      "to_date": "2022-06-19Z",
+      "from_hour": "00:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "TUESDAY",
+        "desc": "Tuesday"
+      },
+      "status": {
+        "value": "OPEN",
+        "desc": "Open"
+      }
+    },
+    {
+      "type": {
+        "value": "WEEK",
+        "desc": "Standard opening hours"
+      },
+      "inherited": false,
+      "desc": "Friday",
+      "from_date": "2017-06-19Z",
+      "to_date": "2022-06-19Z",
+      "from_hour": "00:00",
+      "to_hour": "22:00",
+      "day_of_week": {
+        "value": "FRIDAY",
+        "desc": "Friday"
+      },
+      "status": {
+        "value": "OPEN",
+        "desc": "Open"
+      }
+    },
+    {
+      "type": {
+        "value": "WEEK",
+        "desc": "Standard opening hours"
+      },
+      "inherited": false,
+      "desc": "Thursday",
+      "from_date": "2017-06-19Z",
+      "to_date": "2022-06-19Z",
+      "from_hour": "00:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "THURSDAY",
+        "desc": "Thursday"
+      },
+      "status": {
+        "value": "OPEN",
+        "desc": "Open"
+      }
+    },
+    {
+      "type": {
+        "value": "WEEK",
+        "desc": "Standard opening hours"
+      },
+      "inherited": false,
+      "desc": "Wednesday",
+      "from_date": "2017-06-19Z",
+      "to_date": "2022-06-19Z",
+      "from_hour": "00:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "WEDNESDAY",
+        "desc": "Wednesday"
+      },
+      "status": {
+        "value": "OPEN",
+        "desc": "Open"
+      }
+    },
+    {
+      "type": {
+        "value": "WEEK",
+        "desc": "Standard opening hours"
+      },
+      "inherited": false,
+      "desc": "Sunday",
+      "from_date": "2017-06-19Z",
+      "to_date": "2022-06-19Z",
+      "from_hour": "10:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "SUNDAY",
+        "desc": "Sunday"
+      },
+      "status": {
+        "value": "OPEN",
+        "desc": "Open"
+      }
+    },
+    {
+      "type": {
+        "value": "WEEK",
+        "desc": "Standard opening hours"
+      },
+      "inherited": false,
+      "desc": "Saturday",
+      "from_date": "2017-06-19Z",
+      "to_date": "2022-06-19Z",
+      "from_hour": "10:00",
+      "to_hour": "22:00",
+      "day_of_week": {
+        "value": "SATURDAY",
+        "desc": "Saturday"
+      },
+      "status": {
+        "value": "OPEN",
+        "desc": "Open"
+      }
+    },
+    {
+      "type": {
+        "value": "WEEK",
+        "desc": "Standard opening hours"
+      },
+      "inherited": false,
+      "desc": "Open 00:00-23:59",
+      "from_date": "2017-06-23Z",
+      "to_date": "2020-06-23Z",
+      "from_hour": "00:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "MONDAY",
+        "desc": "Monday"
+      },
+      "status": {
+        "value": "OPEN",
+        "desc": "Open"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Summer Close",
+      "from_date": "2017-08-25Z",
+      "to_date": "2017-08-25Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "FRIDAY",
+        "desc": "Friday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Summer Weekend",
+      "from_date": "2017-08-26Z",
+      "to_date": "2017-08-27Z",
+      "from_hour": "00:00",
+      "to_hour": "23:59",
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Summer Open",
+      "from_date": "2017-08-28Z",
+      "to_date": "2017-08-28Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "MONDAY",
+        "desc": "Monday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Summer Close",
+      "from_date": "2017-08-28Z",
+      "to_date": "2017-08-28Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "MONDAY",
+        "desc": "Monday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Summer Open",
+      "from_date": "2017-08-29Z",
+      "to_date": "2017-08-29Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "TUESDAY",
+        "desc": "Tuesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Summer Close",
+      "from_date": "2017-08-29Z",
+      "to_date": "2017-08-29Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "TUESDAY",
+        "desc": "Tuesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Fall 1st Day Open",
+      "from_date": "2017-08-30Z",
+      "to_date": "2017-08-30Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "WEDNESDAY",
+        "desc": "Wednesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Labor Day 2017",
+      "from_date": "2017-09-04Z",
+      "to_date": "2017-09-04Z",
+      "from_hour": "00:00",
+      "to_hour": "23:59",
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Labor Day 2017",
+      "from_date": "2017-09-05Z",
+      "to_date": "2017-09-05Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Fall Break 2017 Begins",
+      "from_date": "2017-10-18Z",
+      "to_date": "2017-10-18Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "WEDNESDAY",
+        "desc": "Wednesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Fall Break 2017 Open",
+      "from_date": "2017-10-19Z",
+      "to_date": "2017-10-19Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "THURSDAY",
+        "desc": "Thursday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Fall Break 2017 Close",
+      "from_date": "2017-10-19Z",
+      "to_date": "2017-10-19Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "THURSDAY",
+        "desc": "Thursday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Fall Break 2017 Open",
+      "from_date": "2017-10-20Z",
+      "to_date": "2017-10-20Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "FRIDAY",
+        "desc": "Friday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Fall Break 2017 Close",
+      "from_date": "2017-10-20Z",
+      "to_date": "2017-10-20Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "FRIDAY",
+        "desc": "Friday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Fall Break 2017",
+      "from_date": "2017-10-21Z",
+      "to_date": "2017-10-21Z",
+      "from_hour": "00:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "SATURDAY",
+        "desc": "Saturday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Fall Break 2017 Ends",
+      "from_date": "2017-10-22Z",
+      "to_date": "2017-10-22Z",
+      "from_hour": "00:00",
+      "to_hour": "18:00",
+      "day_of_week": {
+        "value": "SUNDAY",
+        "desc": "Sunday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Thanksgiving Break 2017 Begins",
+      "from_date": "2017-11-17Z",
+      "to_date": "2017-11-17Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "FRIDAY",
+        "desc": "Friday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Thanksgiving Break 2017 Weekend",
+      "from_date": "2017-11-18Z",
+      "to_date": "2017-11-19Z",
+      "from_hour": "00:00",
+      "to_hour": "23:59",
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Thanksgiving Break 2017 Open",
+      "from_date": "2017-11-20Z",
+      "to_date": "2017-11-20Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "MONDAY",
+        "desc": "Monday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Thanksgiving Break 2017 Close",
+      "from_date": "2017-11-20Z",
+      "to_date": "2017-11-20Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "MONDAY",
+        "desc": "Monday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Thanksgiving Break 2017 Open",
+      "from_date": "2017-11-21Z",
+      "to_date": "2017-11-21Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "TUESDAY",
+        "desc": "Tuesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Thanksgiving Break 2017 Close",
+      "from_date": "2017-11-21Z",
+      "to_date": "2017-11-21Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "TUESDAY",
+        "desc": "Tuesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Thanksgiving Break 2017 Open",
+      "from_date": "2017-11-22Z",
+      "to_date": "2017-11-22Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "WEDNESDAY",
+        "desc": "Wednesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Thanksgiving Break 2017 Close",
+      "from_date": "2017-11-22Z",
+      "to_date": "2017-11-22Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "WEDNESDAY",
+        "desc": "Wednesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Thanksgiving Break 2017 Holiday",
+      "from_date": "2017-11-23Z",
+      "to_date": "2017-11-25Z",
+      "from_hour": "00:00",
+      "to_hour": "23:59",
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Thanksgiving Break 2017 Ends",
+      "from_date": "2017-11-26Z",
+      "to_date": "2017-11-26Z",
+      "from_hour": "00:00",
+      "to_hour": "18:00",
+      "day_of_week": {
+        "value": "SUNDAY",
+        "desc": "Sunday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Finals Extended Hours",
+      "from_date": "2017-12-15Z",
+      "to_date": "2017-12-15Z",
+      "from_hour": "22:00",
+      "to_hour": "23:00",
+      "day_of_week": {
+        "value": "FRIDAY",
+        "desc": "Friday"
+      },
+      "status": {
+        "value": "OPEN",
+        "desc": "Open"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Finals Extended Hours",
+      "from_date": "2017-12-16Z",
+      "to_date": "2017-12-16Z",
+      "from_hour": "22:00",
+      "to_hour": "23:00",
+      "day_of_week": {
+        "value": "SATURDAY",
+        "desc": "Saturday"
+      },
+      "status": {
+        "value": "OPEN",
+        "desc": "Open"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 2017\/18 Begins",
+      "from_date": "2017-12-22Z",
+      "to_date": "2017-12-22Z",
+      "from_hour": "20:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "FRIDAY",
+        "desc": "Friday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break Holiday",
+      "from_date": "2017-12-23Z",
+      "to_date": "2018-01-01Z",
+      "from_hour": "00:00",
+      "to_hour": "23:59",
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 1st Week Open",
+      "from_date": "2018-01-02Z",
+      "to_date": "2018-01-02Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "TUESDAY",
+        "desc": "Tuesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 1st Week Close",
+      "from_date": "2018-01-02Z",
+      "to_date": "2018-01-02Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "TUESDAY",
+        "desc": "Tuesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 1st Week Open",
+      "from_date": "2018-01-03Z",
+      "to_date": "2018-01-03Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "WEDNESDAY",
+        "desc": "Wednesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 1st Week Close",
+      "from_date": "2018-01-03Z",
+      "to_date": "2018-01-03Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "WEDNESDAY",
+        "desc": "Wednesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 1st Week Open",
+      "from_date": "2018-01-04Z",
+      "to_date": "2018-01-04Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "THURSDAY",
+        "desc": "Thursday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 1st Week Close",
+      "from_date": "2018-01-04Z",
+      "to_date": "2018-01-04Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "THURSDAY",
+        "desc": "Thursday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 1st Week Open",
+      "from_date": "2018-01-05Z",
+      "to_date": "2018-01-05Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "FRIDAY",
+        "desc": "Friday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 1st Week Close",
+      "from_date": "2018-01-05Z",
+      "to_date": "2018-01-05Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "FRIDAY",
+        "desc": "Friday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 1st Weekend",
+      "from_date": "2018-01-06Z",
+      "to_date": "2018-01-07Z",
+      "from_hour": "00:00",
+      "to_hour": "23:59",
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 2nd Week Open",
+      "from_date": "2018-01-08Z",
+      "to_date": "2018-01-08Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "MONDAY",
+        "desc": "Monday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 2nd Week Close",
+      "from_date": "2018-01-08Z",
+      "to_date": "2018-01-08Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "MONDAY",
+        "desc": "Monday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 2nd Week Open",
+      "from_date": "2018-01-09Z",
+      "to_date": "2018-01-09Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "TUESDAY",
+        "desc": "Tuesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 2nd Week Close",
+      "from_date": "2018-01-09Z",
+      "to_date": "2018-01-09Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "TUESDAY",
+        "desc": "Tuesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 2nd Week Open",
+      "from_date": "2018-01-10Z",
+      "to_date": "2018-01-10Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "WEDNESDAY",
+        "desc": "Wednesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 2nd Week Close",
+      "from_date": "2018-01-10Z",
+      "to_date": "2018-01-10Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "WEDNESDAY",
+        "desc": "Wednesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 2nd Week Open",
+      "from_date": "2018-01-11Z",
+      "to_date": "2018-01-11Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "THURSDAY",
+        "desc": "Thursday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 2nd Week Close",
+      "from_date": "2018-01-11Z",
+      "to_date": "2018-01-11Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "THURSDAY",
+        "desc": "Thursday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 2nd Week Open",
+      "from_date": "2018-01-12Z",
+      "to_date": "2018-01-12Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "FRIDAY",
+        "desc": "Friday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 2nd Week Close",
+      "from_date": "2018-01-12Z",
+      "to_date": "2018-01-12Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "FRIDAY",
+        "desc": "Friday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 2nd Weekend",
+      "from_date": "2018-01-13Z",
+      "to_date": "2018-01-14Z",
+      "from_hour": "00:00",
+      "to_hour": "23:59",
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 3rd Week Open",
+      "from_date": "2018-01-15Z",
+      "to_date": "2018-01-15Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "MONDAY",
+        "desc": "Monday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 3rd Week Close",
+      "from_date": "2018-01-15Z",
+      "to_date": "2018-01-15Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "MONDAY",
+        "desc": "Monday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 3rd Week Open",
+      "from_date": "2018-01-16Z",
+      "to_date": "2018-01-16Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "TUESDAY",
+        "desc": "Tuesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 3rd Week Close",
+      "from_date": "2018-01-16Z",
+      "to_date": "2018-01-16Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "TUESDAY",
+        "desc": "Tuesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 3rd Week Open",
+      "from_date": "2018-01-17Z",
+      "to_date": "2018-01-17Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "WEDNESDAY",
+        "desc": "Wednesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 3rd Week Close",
+      "from_date": "2018-01-17Z",
+      "to_date": "2018-01-17Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "WEDNESDAY",
+        "desc": "Wednesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 3rd Week Open",
+      "from_date": "2018-01-18Z",
+      "to_date": "2018-01-18Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "THURSDAY",
+        "desc": "Thursday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 3rd Week Close",
+      "from_date": "2018-01-18Z",
+      "to_date": "2018-01-18Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "THURSDAY",
+        "desc": "Thursday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 3rd Week Open",
+      "from_date": "2018-01-19Z",
+      "to_date": "2018-01-19Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "FRIDAY",
+        "desc": "Friday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 3rd Week Close",
+      "from_date": "2018-01-19Z",
+      "to_date": "2018-01-19Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Winter Break 3rd Weekend",
+      "from_date": "2018-01-20Z",
+      "to_date": "2018-01-21Z",
+      "from_hour": "00:00",
+      "to_hour": "23:59",
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Spring 1st Day Open",
+      "from_date": "2018-01-22Z",
+      "to_date": "2018-01-22Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "MONDAY",
+        "desc": "Monday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Spring Break Begins",
+      "from_date": "2018-03-09Z",
+      "to_date": "2018-03-09Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "FRIDAY",
+        "desc": "Friday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Spring Break Weekend",
+      "from_date": "2018-03-10Z",
+      "to_date": "2018-03-12Z",
+      "from_hour": "00:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "FRIDAY",
+        "desc": "Friday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Spring Break Open",
+      "from_date": "2018-03-13Z",
+      "to_date": "2018-03-13Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "TUESDAY",
+        "desc": "Tuesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Spring Break Close",
+      "from_date": "2018-03-13Z",
+      "to_date": "2018-03-13Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "TUESDAY",
+        "desc": "Tuesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Spring Break Open",
+      "from_date": "2018-03-14Z",
+      "to_date": "2018-03-14Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "WEDNESDAY",
+        "desc": "Wednesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Spring Break Close",
+      "from_date": "2018-03-14Z",
+      "to_date": "2018-03-14Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "WEDNESDAY",
+        "desc": "Wednesday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Spring Break Open",
+      "from_date": "2018-03-15Z",
+      "to_date": "2018-03-15Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "THURSDAY",
+        "desc": "Thursday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Spring Break Close",
+      "from_date": "2018-03-15Z",
+      "to_date": "2018-03-15Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "THURSDAY",
+        "desc": "Thursday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Spring Break Open",
+      "from_date": "2018-03-16Z",
+      "to_date": "2018-03-16Z",
+      "from_hour": "00:00",
+      "to_hour": "07:30",
+      "day_of_week": {
+        "value": "FRIDAY",
+        "desc": "Friday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Spring Break Close",
+      "from_date": "2018-03-16Z",
+      "to_date": "2018-03-16Z",
+      "from_hour": "17:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "FRIDAY",
+        "desc": "Friday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Spring Break Weekend",
+      "from_date": "2018-03-17Z",
+      "to_date": "2018-03-17Z",
+      "from_hour": "00:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "SATURDAY",
+        "desc": "Saturday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Spring Break Ends",
+      "from_date": "2018-03-18Z",
+      "to_date": "2018-03-18Z",
+      "from_hour": "00:00",
+      "to_hour": "18:00",
+      "day_of_week": {
+        "value": "SUNDAY",
+        "desc": "Sunday"
+      },
+      "status": {
+        "value": "CLOSE",
+        "desc": "Closed"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Finals Extended Hours",
+      "from_date": "2018-05-04Z",
+      "to_date": "2018-05-04Z",
+      "from_hour": "22:00",
+      "to_hour": "23:00",
+      "day_of_week": {
+        "value": "FRIDAY",
+        "desc": "Friday"
+      },
+      "status": {
+        "value": "OPEN",
+        "desc": "Open"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Finals Extended Hours",
+      "from_date": "2018-05-05Z",
+      "to_date": "2018-05-05Z",
+      "from_hour": "22:00",
+      "to_hour": "23:00",
+      "day_of_week": {
+        "value": "SATURDAY",
+        "desc": "Saturday"
+      },
+      "status": {
+        "value": "OPEN",
+        "desc": "Open"
+      }
+    },
+    {
+      "type": {
+        "value": "EXCEPTION",
+        "desc": "Exception"
+      },
+      "inherited": false,
+      "desc": "Spring Semester End",
+      "from_date": "2018-05-11Z",
+      "to_date": "2018-05-11Z",
+      "from_hour": "20:00",
+      "to_hour": "23:59",
+      "day_of_week": {
+        "value": "FRIDAY",
+        "desc": "Friday"
+      },
+      "status": {
+        "value": "OPEN",
+        "desc": "Open"
+      }
+    },
+    {
+      "type": {
+        "value": "EVENT",
+        "desc": "Event"
+      },
+      "inherited": true,
+      "desc": "End of Term",
+      "from_date": "2018-12-15Z",
+      "status": {
+        "value": "OPEN",
+        "desc": "Open"
+      }
+    }
+  ]
+}
